@@ -2,7 +2,7 @@ import http.server
 import socketserver
 
 HOST = 'localhost'
-PORT = 8000
+PORT = 3000
 
 Handler = http.server.SimpleHTTPRequestHandler
 

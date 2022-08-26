@@ -7,18 +7,49 @@
 
     </head>
     <body>
-        <form method="post" action="/teste.txt"> 
+        <form method="post" action="localhost:3000"> 
         <fieldset>
             <h1> Cadastro de Usuário </h1>
-            <label for="nome">Nome: </label><br>
-            <input type="text" name="nome" placeholder="Digite seu nome..."><br>
-            <label for="sobrenome"> Sobrenome </label><br>
-            <input type="text" name="sobrenome" placeholder="Digite seu sobrenome..."><br>
-            <label for="E-mail">E-mail: </label><br>
-            <input type="email" name="E-mail" placeholder="Digite seu e-mail..."><br>
-            <label for="Telefone"> Telefone </label><br>
-            <input type="number" name="Telefone" placeholder="(051) 9xxxx xxxx"><br>
-            <input type="button" name="enviar" value="Enviar"> 
+            <p> 
+                <label for="nome">Nome Completo: </label><br>
+                <input type="text" name="nome" placeholder="Digite seu nome e sobrenome..."required="required"><br>
+            </p>
+                
+            <p>
+                <label for="CPF "> CPF: </label><br>
+                <input type="text" name="CPF" placeholder="Apenas os números..."required="required"><br>
+            </p>
+                
+            <p>
+                <label for="data_nascimento"> Data de Nascimento: </label><br>
+                <input type="date" name="data_nascimento" placeholder="dd/mm/aaaa" required="required"><br>
+            </p>
+                
+            <p>
+                <label for="Telefone"> Telefone: </label><br>
+                <input type="number" name="Telefone" placeholder="(051) 9xxxx xxxx" required="required"><br>
+            </p>
+                
+            <p>
+                <label for="E-mail"> E-mail: </label><br>
+                <input type="email" name="E-mail" placeholder="Digite seu e-mail..." required="required"><br>
+            </p>
+
+            <p>
+                <label for="ender">Endereço: </label><br>
+                <input type="text" name="ender" placeholder="Rua, Nº, Bairro / Cidade-Estado"required="required"><br>
+            </p>
+
+            <p>
+                <label for="cep"> CEP: </label><br>
+                <input type="text" name="cep" placeholder="Apenas os números..." required="required"><br>
+            </p>
+
+            <p> 
+                <button type="submit" name="enviar" value="Enviar"> Enviar </button>
+            </p>
+            
+        
         </fieldset>
         </form> 
 
